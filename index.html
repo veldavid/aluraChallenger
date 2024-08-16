@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cuerpo">
+    <header >
+        <img class="cabesera" src="./img/letra.png" alt="">
+    </header>
+    <main class="principal">        
+        <section class="texto_entrada" id="forma_entrada">
+            <div >
+                <textarea cols="30" rows="10" type="text" id="textoInsertado" class="texto__area__entrada" placeholder="Ingrese el Texto aqui" ></textarea> 
+            </div>            
+            <div class="advertencia" id="input__txt">
+                <img src="./img/Frame 1.png" alt="simbolo exclamacion"> 
+            </div>                   
+            <div class="botones">
+                <button onclick="Cifrar();" id="encrip"  class="container__boton">Encriptar</button>
+                <button onclick="decifrar();" id="desenc" class="container__boton">Desencriptar</button>
+            </div> 
+        </section>
+        <section class="area_salido_texto">   
+            <div class="munneco" id="vacio">
+                <img src="./img/2.jpg" alt="sin texto" class="munnequito">
+            </div>                               
+            <div class="texto_salida" id="show1">                
+                <textarea readonly type="text" cols="20" rows="10" id="textoCifrado" class="texto__area__salida" ></textarea> 
+                <button onclick="copiarClipboard();" id="copiar"  class="copiar__boton">Copiar</button>
+            </div>            
+        </section>
+    </main>
+    <footer class="rodapies">
+        <p>Desarrollado por: David Velazquez</p>
+    </footer>
+    <script src="app.js" defer></script>  
+</body>
+</html>
